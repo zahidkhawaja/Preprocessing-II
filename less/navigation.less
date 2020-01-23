@@ -5,6 +5,11 @@
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    @media @mobile {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .nav nav {
@@ -12,12 +17,29 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media @mobile {
+        width: 90%;
+        justify-content: space-evenly;
+    }
+}
+
+@media @mobile {
+    .nav h1 {
+        font-size: 3.5rem;
+        margin-bottom: 15px;
+        width: 90%;
+    }
 }
 
 .nav a {
     text-decoration: none;
     color: black;
     font-size: 1.6rem;
+
+    @media @mobile {
+        width: 90%;
+    }
 }
 
 .img-bus {
@@ -29,6 +51,10 @@
 .img-bus img {
     width: 800px;
     margin-bottom: 20px;
+
+    @media @mobile {
+        width: 90%;
+    }
 }
 
 .btn {
